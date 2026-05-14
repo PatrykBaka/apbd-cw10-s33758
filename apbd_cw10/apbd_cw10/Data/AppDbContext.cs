@@ -25,9 +25,9 @@ public class AppDbContext : DbContext
 
         modelBuilder.Entity<PC>().HasData(new List<PC>()
         {
-            new PC() { Id = 1, Name = "PC 1", Weight = 12f, Warranty = 12, CreatedAt = DateTime.Now, Stock = 5 },
-            new PC() { Id = 2, Name = "PC 2", Weight = 20f, Warranty = 24, CreatedAt = DateTime.Now, Stock = 7 },
-            new PC() { Id = 3, Name = "PC 3", Weight = 15f, Warranty = 12, CreatedAt = DateTime.Now, Stock = 4 }
+            new PC() { Id = 1, Name = "PC 1", Weight = 12f, Warranty = 12, CreatedAt = new DateTime(2026, 05, 14), Stock = 5 },
+            new PC() { Id = 2, Name = "PC 2", Weight = 20f, Warranty = 24, CreatedAt = new DateTime(2026, 05, 14), Stock = 7 },
+            new PC() { Id = 3, Name = "PC 3", Weight = 15f, Warranty = 12, CreatedAt = new DateTime(2026, 05, 14), Stock = 4 }
         });
 
         modelBuilder.Entity<Component>().HasData(new List<Component>()

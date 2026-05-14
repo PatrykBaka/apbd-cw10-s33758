@@ -26,7 +26,7 @@ public class PCsController : ControllerBase
     }
 
     [HttpGet("{id}/components")]
-    public async Task<IActionResult> GetPCsById(int id)
+    public async Task<IActionResult> GetPCsById( int id)
     {
         try
         {
@@ -49,7 +49,7 @@ public class PCsController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> UpdatePC(int id, UpdatePC updatePC)
+    public async Task<IActionResult> UpdatePC( int id, UpdatePC updatePC)
     {
         try
         {
@@ -65,7 +65,7 @@ public class PCsController : ControllerBase
     }
 
     [HttpDelete("{id}")]
-    public async Task<IActionResult> DeletePC(int id)
+    public async Task<IActionResult> DeletePC( int id)
     {
         try
         {
