@@ -18,9 +18,10 @@ public class Component
     public int ComponentTypesId { get; set; }
 
     [ForeignKey(nameof(ComponentManufacturersId))]
-    public ComponentManufacturers Cm { get; set; } = null!;
+    public ComponentManufacturers ComponentManufacturers { get; set; } = null!;
 
-    [ForeignKey(nameof(ComponentTypesId))] public ComponentType Ct { get; set; } = null!;
+    [ForeignKey(nameof(ComponentTypesId))]
+    public ComponentType ComponentType { get; set; } = null!;
     
     public ICollection<PCComponent> PCComponents { get; set; } = [];
 }
