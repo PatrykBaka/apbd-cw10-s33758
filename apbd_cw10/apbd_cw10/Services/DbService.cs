@@ -23,6 +23,7 @@ public class DbService : IDbService
         {
             Id = p.Id,
             Name = p.Name,
+            Weight =  p.Weight,
             Warranty = p.Warranty,
             CreatedAt = p.CreatedAt,
             Stock = p.Stock
@@ -35,6 +36,7 @@ public class DbService : IDbService
         {
             Id = p.Id,
             Name = p.Name,
+            Weight =  p.Weight,
             Warranty = p.Warranty,
             CreatedAt = p.CreatedAt,
             Stock = p.Stock,
@@ -77,6 +79,7 @@ public class DbService : IDbService
         {
             Name = addPC.Name,
             Warranty = addPC.Warranty,
+            Weight = addPC.Weight,
             CreatedAt = addPC.CreatedAt,
             Stock = addPC.Stock,
         };
@@ -97,6 +100,7 @@ public class DbService : IDbService
         
         pc.Name = updatePC.Name;
         pc.Warranty = updatePC.Warranty;
+        pc.Weight = updatePC.Weight;
         pc.CreatedAt = updatePC.CreatedAt;
         pc.Stock = updatePC.Stock;
         await _dbContext.SaveChangesAsync();
